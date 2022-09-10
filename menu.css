@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 main{
     margin: 0;
 }
@@ -5,6 +9,36 @@ main{
 body {
     margin: 0;
 }
+
 img {
     width: 100%;
+}
+
+#titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 5% 0% 5%;
+}
+
+.titre-menu {
+    font-family: 'Shrikhand', cursive;
+}
+
+#menus {
+    background-color: #f6f6f6;
+}
+
+.plat {
+    background-color: white;
+    width: 90%;
+    height: 5%;
+    margin: 5%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.plat h3 {
+    padding: 10px 0px 0px 10px;
 }
