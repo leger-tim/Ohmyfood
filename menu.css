@@ -67,7 +67,20 @@ img {
     border-bottom: 3px solid #99E2D0;
     padding-bottom: 5px;
     width: 40px;
+    animation: progressif 1s;
 }
+
+@keyframes progressif {
+
+    from {
+        margin-bottom: 10%;
+    }
+
+    to {
+        margin-bottom: 0%;
+    }
+}
+
 
 .plat {
     background-color: white;
@@ -91,6 +104,11 @@ img {
     justify-content: space-between;
 }
 
+#img-note {
+    object-fit: cover;
+    height: 290px;
+}
+
 #centrer-bouton {
     text-align: center;
 }
@@ -107,6 +125,11 @@ img {
     margin-right: auto;
     align-self: center;
     box-shadow: 0 3px 5px 0px gray;
+}
+#commander:hover {
+    filter: brightness(110%);
+    box-shadow: 0 8px 10px 3px gray;
+
 }
 
 footer {
@@ -137,4 +160,10 @@ footer li i {
     font-family: 'Shrikhand', cursive;
     color: white;
     padding-top: 10px;
+    
+}
+
+#contact {
+    text-decoration: none;
+    color: white;
 }
