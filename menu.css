@@ -1,18 +1,45 @@
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-main{
-    margin: 0;
-}
 
 body {
     margin: 0;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+#tete {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#tete img {
+    width: 200px;
+    margin-bottom: 10px;
 }
 
 img {
     width: 100%;
 }
+
+.fleche {
+    margin-left: 20px;
+    padding-bottom: 15px;
+    color: black;
+}
+
+#logo-tete {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 #titre {
     display: flex;
@@ -20,6 +47,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0% 5% 0% 5%;
+    padding-top: 5%;
 }
 
 .titre-menu {
@@ -28,17 +56,85 @@ img {
 
 #menus {
     background-color: #f6f6f6;
+    position:relative;
+    bottom: 50px;
+    border-radius: 45px 45px 0px 0px;
+    height: 100%;
+}
+
+.sous-menu {
+    margin-left: 25px;
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 5px;
+    width: 40px;
 }
 
 .plat {
     background-color: white;
     width: 90%;
-    height: 5%;
+    height: 7%;
     margin: 5%;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 2px -2px gray;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 14px 9px -2px #eaeaea;
 }
 
 .plat h3 {
     padding: 10px 0px 0px 10px;
+}
+
+.plat p {
+    margin: -13px 15px 7px 11px;
+}
+
+.descr {
+    display: flex;
+    justify-content: space-between;
+}
+
+#centrer-bouton {
+    text-align: center;
+}
+
+#commander {
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    color: white;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    box-shadow: 0 3px 5px 0px gray;
+}
+
+footer {
+    box-sizing: border-box;
+
+    background-color: #353535;
+    color: white;
+}
+
+footer ul {
+    margin-bottom: 0px;
+}
+
+footer li {
+    padding-bottom: 7px;
+}
+
+footer ul {
+    list-style:none;
+}
+
+footer li i {
+    /* margin-right: 5px; */
+}
+
+#logo-footer {
+    box-sizing: border-box;
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    padding-top: 10px;
 }

@@ -12,6 +12,14 @@ header img {
     margin: auto;
 }
 
+#logo {
+    width: 200px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #position {
     width: 100%;
     display: flex;
@@ -20,6 +28,7 @@ header img {
     background-color: #eaeaea;
     margin-top: 10px;
     color: #4b4b4b;
+    box-shadow: inset  0px 2px 5px gray;
 }
 
 #position i {
@@ -29,23 +38,129 @@ header img {
 #position h3 {
     margin-right: 3%;
 }
+
+#section1 {
+    background-color: #f6f6f6;
+
+}
+
 #reservez {
     text-align: center;
     background-color: #f6f6f6;
     padding-top: 8%;
     padding-bottom: 8%;
+    margin: 0% 5% 0% 5%;
+}
+
+#reservez h1 {
+    font-size:x-large;
 }
 
 #explorer {
-    background-color: #FF79DA;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
     color: white;
     padding: 10px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 25px 25px 25px 25px;
     border: none;
+    width: 220px;
+    height: 50px;
+    font-size: medium;
+}
+
+
+#section2 {
+    margin-top: 10%;
+}
+
+#fonctionnement h2 {
+    padding-left: 5%;
+}
+
+.texte-fct {
+    padding-right: 10%;
+}
+
+.texte-fct2 {
+    padding-right: 20%; 
+}
+
+.texte-fct3 {
+    padding-right: 19%;
+}
+
+.tel {
+    color: gray;
+}
+
+.point {
+    color: gray;
+    /* padding-right: 10%; */
 }
 
 .magasin {
     color: #9356dc;
+    /* padding-right: 10%; */
+}
+
+#un {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    width: 80%;
+    height: 75px;
+    margin-left: 5%;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 14px 9px -7px #eaeaea;
+
+}
+
+#deux {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    width: 80%;
+    height: 75px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 14px 9px -7px #eaeaea;
+
+}
+
+#trois {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5edff;
+    width: 80%;
+    height: 75px;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 14px 9px -7px #eaeaea;
+
+}
+
+.num {
+    background-color: #9356dc;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    right: 10px;
 }
 
 #restaurants {
@@ -56,6 +171,11 @@ header img {
     flex-direction: column;
     align-items: center;
 }
+
+#restaurants h2 {
+    margin-left: -60%;
+}
+
 
 #restaurants a {
     text-decoration: none;
@@ -69,7 +189,8 @@ header img {
     margin: 5%;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 14px 9px -2px #eaeaea;
+    position: relative;
 }
 
 .carte img {
@@ -90,10 +211,27 @@ header img {
     margin-bottom: -10px;
 }
 
+.nouveau {
+    background-color: #99e2d0;
+    color: #008766;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px 2px 2px 2px;
+    position: absolute;
+    bottom: 80%;
+    left: 78%;
+    font-size: smaller;
+    font-weight: bold;
+
+}
+
 .coeur {
     margin-left: 88%;
     position: relative;
-    bottom: 50px;
+    bottom: 40px;   
 }
 
 
@@ -102,54 +240,29 @@ footer {
     color: white;
 }
 
-#un {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f6f6f6;
-    width: 90%;
-    margin-left: 5%;
-    border-radius: 10px 10px 10px 10px;
-    margin-bottom: 5%;
+footer ul {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: -5px;
 }
 
-#deux {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f6f6f6;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    border-radius: 10px 10px 10px 10px;
+footer li {
+    padding-bottom: 7px;
 }
 
-#trois {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #f5edff;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 10%;
-    border-radius: 10px 10px 10px 10px;
-}
-
-.num {
-    background-color: #9356dc;
-    color: white;
-    padding: 5px;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-}
 
 footer ul {
     list-style:none;
 }
 
+footer li i {
+    /* margin-right: 5px; */
+}
+
 #logo-footer {
+    box-sizing: border-box;
     font-family: 'Shrikhand', cursive;
     color: white;
+    padding-top: 10px;
+    margin-top: 0px;
 }
