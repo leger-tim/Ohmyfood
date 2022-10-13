@@ -1,5 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
+    z-index: 0;
 }
 
 body {
@@ -71,6 +72,7 @@ header img {
 #explorer:hover {
     filter: brightness(110%);
     box-shadow: 0 8px 10px 3px gray;
+    cursor: pointer;
 }
 
 #section2 {
@@ -237,9 +239,49 @@ header img {
     margin-left: 88%;
     position: relative;
     bottom: 40px;   
-    background-color: white;
+    z-index: 2;
 }
 
+.coeur-plein {
+    margin-left: 88%;
+    position: relative;
+    bottom: 60px;   
+    color:#9356DC;
+    z-index: 1;
+    opacity: 0;
+}
+
+.coeur:hover {
+    animation: vide 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.coeur:hover + .coeur-plein {
+    animation: rempli 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes vide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rempli {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 footer {
     background-color: #353535;
@@ -283,23 +325,3 @@ footer li i {
 
 
 
-.coeur:hover {
-    
-    animation: coeur-remplit 5s;
-
-}
-
-@keyframes coeur-remplit {
-    0% {
-        
-        opacity: 0;
-        color: white;
-    }
-    
-        
-    
-    100% {
-        opacity: 1;
-        color: #9356DC;
-    }
-}
