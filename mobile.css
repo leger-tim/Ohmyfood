@@ -260,7 +260,6 @@ header img {
 .coeur:hover + .coeur-plein {
     animation: rempli 1s;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes vide {
