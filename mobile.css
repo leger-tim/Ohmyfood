@@ -84,7 +84,7 @@ header img {
 }
 
 .texte-fct {
-    padding-right: 10%;
+    padding-right: 13%;
 }
 
 .texte-fct2 {
@@ -97,15 +97,18 @@ header img {
 
 .tel {
     color: gray;
+    margin-left: -4%;
 }
 
 .point {
     color: gray;
+    margin-left: -4%;
     /* padding-right: 10%; */
 }
 
 .magasin {
     color: #9356dc;
+    margin-left: -4%;
     /* padding-right: 10%; */
 }
 
@@ -114,7 +117,7 @@ header img {
     align-items: center;
     justify-content: space-between;
     background-color: #f6f6f6;
-    width: 80%;
+    width: 90%;
     height: 75px;
     margin-left: 5%;
     border-radius: 20px 20px 20px 20px;
@@ -130,7 +133,7 @@ header img {
     align-items: center;
     justify-content: space-between;
     background-color: #f6f6f6;
-    width: 80%;
+    width: 90%;
     height: 75px;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -146,10 +149,10 @@ header img {
     align-items: center;
     justify-content: space-between;
     background-color: #f5edff;
-    width: 80%;
+    width: 90%;
     height: 75px;
     margin-left: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     border-radius: 20px 20px 20px 20px;
     margin-left: auto;
     margin-right: auto;
@@ -180,7 +183,8 @@ header img {
 }
 
 #restaurants h2 {
-    margin-left: -60%;
+    margin-left: -50%;
+    margin-top: 20%;
 }
 
 
@@ -211,7 +215,7 @@ header img {
 .desc-carte {
     background-color: white;
     padding-left: 5%;
-    height: 50px;
+    height: 30px;
 }
 
 .desc-carte h3 {
@@ -229,7 +233,7 @@ header img {
     border-radius: 2px 2px 2px 2px;
     position: absolute;
     bottom: 80%;
-    left: 78%;
+    left: 70%;
     font-size: smaller;
     font-weight: bold;
 
@@ -238,14 +242,16 @@ header img {
 .coeur {
     margin-left: 88%;
     position: relative;
-    bottom: 40px;   
+    bottom: 15px;
+    right: 10px;   
     z-index: 2;
 }
 
 .coeur-plein {
     margin-left: 88%;
     position: relative;
-    bottom: 60px;   
+    bottom: 35px;
+    right: 10px;   
     color:#9356DC;
     z-index: 1;
     opacity: 0;
@@ -282,9 +288,14 @@ header img {
     }
 }
 
+.del {
+    margin-bottom: 20%;
+}
+
 footer {
     background-color: #353535;
     color: white;
+    padding-bottom: 5%;
 }
 
 footer ul {
@@ -302,15 +313,11 @@ footer ul {
     list-style:none;
 }
 
-footer li i {
-    /* margin-right: 5px; */
-}
-
 #logo-footer {
     box-sizing: border-box;
     font-family: 'Shrikhand', cursive;
     color: white;
-    padding-top: 10px;
+    padding-top: 10%;
     margin-top: 0px;
 }
 

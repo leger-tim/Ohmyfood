@@ -2,17 +2,17 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-/* 
+
 #fond {
     width: 100%;
     height: 100%;
-    background-color: #008766;
-    z-index: 2;
-    display: flex;
+    background-color: #9356DC;
+    z-index: 3;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     position: absolute;
-    animation: charge 3s;
+    animation: charge 2s;
     animation-fill-mode: forwards;
 }
 
@@ -32,13 +32,18 @@
 }
 
 .loader {
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     border: 5px solid #FFF;
-    border-bottom-color: #9356DC;
+    border-bottom-color: #99E2D0;
     border-radius: 50%;
+    position: sticky;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: auto;
     display: inline-block;
-    animation: rotation 1s linear infinite;
+    animation: rotation 2s linear ;
     animation-fill-mode: forwards;
 }
 
@@ -49,7 +54,7 @@
     100% {
         transform: rotate(360deg);
     }
-    } */
+    } 
 
 body {
     margin: 0;
@@ -63,7 +68,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 10px;
     text-decoration: none;
 }
@@ -119,12 +124,12 @@ img {
 .plat {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     white-space: nowrap;
     /* overflow: hidden; */
     background-color: white;
-    width: 90%;
-    height: 7%;
+    width: 95%;
+    height: 5%;
     margin: 5%;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0 14px 9px -2px #eaeaea;    
@@ -133,9 +138,9 @@ img {
 
 .detail {
     display: inline-block;
-    text-overflow: ellipsis;
     flex-wrap: nowrap;
     overflow: hidden;
+    width: 100%;
 }
 
 .detail h3 {
@@ -143,32 +148,44 @@ img {
     overflow: hidden;
 }
 
-.detail p {
+.description {
     display: inline;
-    
+}
+
+.description p {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
 }
 
 .plat h3 {
-    padding: 10px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
 }
 
 .plat p {
     margin: -13px 15px 7px 11px;
 }
 
+.taille {
+    width: 65%;
+}
 
+.marge {
+    margin-right: 10px;
+}
 .plat1 {
     animation: progressif 2s;
 }
 
 .plat2 {
     animation: progressif 3s;
-    animation-delay: 4.2s;
+    animation-delay: 3.2s;
 }
 
 .plat3 {
     animation: progressif 4s;
-    animation-delay:4.4s;
+    animation-delay:3.4s;
 }
 
 @keyframes progressif {
@@ -184,20 +201,20 @@ img {
 
 .coche {
     display: inline-block;
-    background-color: #008766;
+    background-color: #99E2D0;
     border-radius: 0px 15px 15px 0px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     overflow: hidden;
     width: 0;
 }
 
 .plat:hover .coche {
-    width: 100px;    
+    width: 80px;    
 }
 
 
 .check {
-    background-color:#008766;
+    background-color:#99E2D0;
     color: white;
 }
 
@@ -211,7 +228,7 @@ img {
 }
 
 .plat:hover .icone-valider {
-    animation: rotation 1s;
+    animation: rotation 0.75s;
     animation-iteration-count: 1;
     display: flex;
 }
@@ -290,4 +307,46 @@ footer li i {
     color: white;
 }
 
+.coeur {
+    position: relative;
+    z-index: 2;
+}
 
+.coeur-plein {
+    position: relative;
+    left: -24px;   
+    color:#9356DC;
+    z-index: 1;
+    opacity: 0;
+} 
+
+.coeur:hover {
+    animation: vide 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.coeur:hover + .coeur-plein {
+    animation: rempli 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes vide {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rempli {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
