@@ -14,7 +14,7 @@
 }
 
 
-@keyframes charge {
+@keyframes charge { 
     
     100% {
         visibility: hidden;
