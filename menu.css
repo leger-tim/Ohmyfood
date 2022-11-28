@@ -28,10 +28,8 @@
     border-bottom-color: #99E2D0;
     border-radius: 50%;
     position: sticky;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    margin-right: auto;
+    top: 44%;
+    left: 46%;
     display: inline-block;
     animation: rotation 2s linear ;
     animation-fill-mode: forwards;
