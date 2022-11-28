@@ -8,9 +8,6 @@
     height: 100%;
     background-color: #9356DC;
     z-index: 3;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     position: absolute;
     animation: charge 2s;
     animation-fill-mode: forwards;
@@ -18,16 +15,9 @@
 
 
 @keyframes charge {
-    0% {
-        opacity: 1;
-    }
-
-    90% {
-        opacity: 1;
-    }
-
+    
     100% {
-        opacity: 0;
+        visibility: hidden;
     }
 }
 
@@ -54,7 +44,7 @@
     100% {
         transform: rotate(360deg);
     }
-    } 
+    }  
 
 body {
     margin: 0;
@@ -130,7 +120,9 @@ img {
     background-color: white;
     width: 95%;
     height: 5%;
-    margin: 5%;
+    margin-bottom: 5%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0 14px 9px -2px #eaeaea;    
 }
@@ -175,7 +167,8 @@ img {
     margin-right: 10px;
 }
 .plat1 {
-    animation: progressif 2s;
+    animation: progressif 2.5s;
+    animation-delay: 3s;
 }
 
 .plat2 {
@@ -244,7 +237,7 @@ img {
     }
 }
 
-#img-note {
+.img-note {
     object-fit: cover;
     height: 290px;
 }
@@ -273,43 +266,10 @@ img {
     cursor: pointer;
 }
 
-footer {
-    box-sizing: border-box;
-    background-color: #353535;
-    color: white;
-}
-
-footer ul {
-    margin-bottom: 0px;
-}
-
-footer li {
-    padding-bottom: 7px;
-}
-
-footer ul {
-    list-style:none;
-}
-
-footer li i {
-    /* margin-right: 5px; */
-}
-
-#logo-footer {
-    box-sizing: border-box;
-    font-family: 'Shrikhand', cursive;
-    color: white;
-    padding-top: 10px;
-}
-
-#contact {
-    text-decoration: none;
-    color: white;
-}
-
 .coeur {
     position: relative;
     z-index: 2;
+    padding-left: -5%;
 }
 
 .coeur-plein {
@@ -349,4 +309,38 @@ footer li i {
     to {
         opacity: 1;
     }
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: #353535;
+    color: white;
+}
+
+footer ul {
+    margin-bottom: 0px;
+}
+
+footer li {
+    padding-bottom: 7px;
+}
+
+footer ul {
+    list-style:none;
+}
+
+footer li i {
+    /* margin-right: 5px; */
+}
+
+#logo-footer {
+    box-sizing: border-box;
+    font-family: 'Shrikhand', cursive;
+    color: white;
+    padding-top: 10px;
+}
+
+#contact {
+    text-decoration: none;
+    color: white;
 }

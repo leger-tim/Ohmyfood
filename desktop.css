@@ -1,0 +1,52 @@
+@media only screen and (min-width : 992px) {
+
+
+#restaurants {
+    margin-top: 8%;
+}
+
+#conteneur {
+    display: flex;
+    flex-direction: row;
+}
+
+.fonctionnement {
+    width: 26%;
+    margin-top: 5%;
+}
+
+#fonctionnement .txt-fct {
+    color: black;
+    padding-left: 10px;
+}
+
+#conteneur-carte {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-bottom: 10%;
+    padding-left: 2%;
+}
+
+#conteneur-carte a {
+    margin-right: 5%;
+}
+
+.carte {
+    width: 100%;
+    height: 90%;
+    margin-right: 5%;
+}
+
+.nouveau {
+    left: 60%;
+}
+
+#logo-footer {
+    font-size: xxx-large;
+}
+}
+
+
+
+

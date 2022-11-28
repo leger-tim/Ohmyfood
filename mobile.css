@@ -83,40 +83,17 @@ header img {
     padding-left: 5%;
 }
 
-.texte-fct {
-    padding-right: 13%;
-}
-
-.texte-fct2 {
-    padding-right: 20%; 
-}
-
-.texte-fct3 {
-    padding-right: 19%;
-}
-
-.tel {
-    color: gray;
-    margin-left: -4%;
-}
-
-.point {
-    color: gray;
-    margin-left: -4%;
-    /* padding-right: 10%; */
-}
-
-.magasin {
+.fonctionnement:hover {
     color: #9356dc;
-    margin-left: -4%;
+    background-color: #f5edff;
     /* padding-right: 10%; */
 }
 
-#un {
+.fonctionnement {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: #f6f6f6;
+    color: gray;
     width: 90%;
     height: 75px;
     margin-left: 5%;
@@ -128,36 +105,9 @@ header img {
 
 }
 
-#deux {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f6f6f6;
-    width: 90%;
-    height: 75px;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 14px 9px -7px #eaeaea;
-
-}
-
-#trois {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f5edff;
-    width: 90%;
-    height: 75px;
-    margin-left: 5%;
-    margin-bottom: 20%;
-    border-radius: 20px 20px 20px 20px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 14px 9px -7px #eaeaea;
-
+#fonctionnement .txt-fct {
+    color: black;
+    padding-left: 10px;
 }
 
 .num {
@@ -171,6 +121,11 @@ header img {
     margin: 0;
     position: relative;
     right: 10px;
+    display: inline-block;
+}
+
+.icone-fct {
+    display: inline;
 }
 
 #restaurants {
@@ -325,8 +280,6 @@ footer ul {
     text-decoration: none;
     color: white;
 }
-
-
 
 
 
