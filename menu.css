@@ -267,7 +267,6 @@ img {
 .coeur {
     position: relative;
     z-index: 2;
-    padding-left: -5%;
 }
 
 .coeur-plein {
