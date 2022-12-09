@@ -3,47 +3,6 @@
     box-sizing: border-box;
 }
 
-#fond {
-    width: 100%;
-    height: 100%;
-    background-color: #9356DC;
-    z-index: 3;
-    position: absolute;
-    animation: charge 2s;
-    animation-fill-mode: forwards;
-}
-
-
-@keyframes charge { 
-    
-    100% {
-        visibility: hidden;
-    }
-}
-
-.loader {
-    width: 60px;
-    height: 60px;
-    border: 5px solid #FFF;
-    border-bottom-color: #99E2D0;
-    border-radius: 50%;
-    position: sticky;
-    top: 44%;
-    left: 46%;
-    display: inline-block;
-    animation: rotation 2s linear ;
-    animation-fill-mode: forwards;
-}
-
-    @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    }  
-
 body {
     margin: 0;
     height: 100%;
@@ -112,9 +71,7 @@ img {
 .plat {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     white-space: nowrap;
-    /* overflow: hidden; */
     background-color: white;
     width: 95%;
     height: 5%;
@@ -326,10 +283,6 @@ footer ul {
     list-style:none;
 }
 
-footer li i {
-    /* margin-right: 5px; */
-}
-
 #logo-footer {
     box-sizing: border-box;
     font-family: 'Shrikhand', cursive;
@@ -340,4 +293,27 @@ footer li i {
 #contact {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width : 992px) and (min-width : 480px) {
+   
+    .taille {
+        width: 83%;
+    } 
+}
+
+@media only screen and (min-width : 992px) {
+
+    .taille {
+        width: 89%;
+    }
+}
+
+@media only screen and (max-width : 383px) {
+
+    .coeur-plein {
+        position: relative;
+        left: 0px;
+        bottom: 20px;
+    }    
 }

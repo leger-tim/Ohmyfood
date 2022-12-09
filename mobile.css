@@ -3,8 +3,49 @@
     z-index: 0;
 }
 
+#fond {
+    width: 100%;
+    height: 100%;
+    background-color: #9356DC;
+    z-index: 3;
+    position: absolute;
+    animation: charge 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes charge { 
+    
+    100% {
+        visibility: hidden;
+    }
+}
+
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 5px solid #FFF;
+    border-bottom-color: #99E2D0;
+    border-radius: 50%;
+    position: sticky;
+    top: 44%;
+    left: 46%;
+    display: inline-block;
+    animation: rotation 2s linear ;
+    animation-fill-mode: forwards;
+}
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }  
+
 body {
     margin: 0;
+    position: relative;
 }
 
 header img {
@@ -17,7 +58,7 @@ header img {
     width: 200px;
     display: flex;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
