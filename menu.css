@@ -308,12 +308,3 @@ footer ul {
         width: 89%;
     }
 }
-
-@media only screen and (max-width : 383px) {
-
-    .coeur-plein {
-        position: relative;
-        left: 0px;
-        bottom: 20px;
-    }    
-}
