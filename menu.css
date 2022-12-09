@@ -122,18 +122,18 @@ img {
     margin-right: 10px;
 }
 .plat1 {
-    animation: progressif 2.5s;
-    animation-delay: 3s;
+    animation: progressif 3s;
+    animation-delay: 1s;
 }
 
 .plat2 {
     animation: progressif 3s;
-    animation-delay: 3.2s;
+    animation-delay: 1.2s;
 }
 
 .plat3 {
-    animation: progressif 4s;
-    animation-delay:3.4s;
+    animation: progressif 3s;
+    animation-delay:1.4s;
 }
 
 @keyframes progressif {
