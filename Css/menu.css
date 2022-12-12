@@ -123,17 +123,17 @@ img {
 }
 .plat1 {
     animation: progressif 3s;
-    animation-delay: 1s;
+    animation-delay: 0.1s;
 }
 
 .plat2 {
     animation: progressif 3s;
-    animation-delay: 1.2s;
+    animation-delay: 0.3s;
 }
 
 .plat3 {
     animation: progressif 3s;
-    animation-delay:1.4s;
+    animation-delay: 0.5s;
 }
 
 @keyframes progressif {
